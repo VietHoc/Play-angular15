@@ -1,0 +1,9 @@
+services:
+  web:
+    build:
+      context: angular15
+    ports:
+      - 4200:4200
+    volumes:
+      - ./angular15:/play-angular
+      - /play-angular/node_modules
