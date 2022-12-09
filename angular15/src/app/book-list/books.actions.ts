@@ -2,7 +2,7 @@ import { createActionGroup, props } from '@ngrx/store';
 import { Book } from './book-list.model';
 
 export const BooksActions = createActionGroup({
-  source: 'book',
+  source: 'Book',
   events: {
     'Add Book': props<{bookId: string}>(),
     'Remove Book': props<{bookId: string}>()
